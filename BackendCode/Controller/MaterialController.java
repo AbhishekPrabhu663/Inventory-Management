@@ -39,20 +39,20 @@ public List<Material> get(@PathVariable(required = false) Integer id) {
 
   // Adding of asset
   @PostMapping("/add")
-  public Material asset(@RequestBody Material asset) {
-    return assetListingService.save(asset);
+  public Material addMaterial(@RequestBody Material material) {
+    return assetListingService.save(material);
   }
 
   // updating of asset based on the id basis
   @PutMapping("/update")
-  public Material update(@RequestBody Material asset) {
-    return assetListingService.save(asset);
+  public Material update(@RequestBody Material material) {
+    return assetListingService.save(material);
   }
 
   // Get the last asset code generated
   @GetMapping("/lastMaterialCode")
-  public String lastAssetCode() {
-    return assetListingService.lastAssetCode();
+  public String lastMaterialCode() {
+    return assetListingService.lastMaterialCode();
   }
 
   // get the id of the asset to delete the asset
