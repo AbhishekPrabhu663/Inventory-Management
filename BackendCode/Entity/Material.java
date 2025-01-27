@@ -25,11 +25,11 @@ public class Material {
   @GeneratedValue(strategy=GenerationType.IDENTITY)
 private int id;
 @Column(name="material_name")
-private String assetName;
+private String materialName;
 @Column(name="category")
 private String category;
 @Column(name="material_code")
-private String assetCode;
+private String materialCode;
  @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "created_at", updatable = false)
